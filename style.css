@@ -1,0 +1,537 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500&display=swap');
+
+
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.offer{
+    background-color: rgb(31, 2, 69);
+    color: white;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+}
+.nav1{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 0 5px #6eaef1;
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    z-index:100; 
+}
+.nav1 .logo img{
+    width: 100px;
+    cursor: pointer;
+}
+.nav1 ul{
+    display: flex;
+    list-style-type: none;
+    margin-left: 50px;
+}
+.nav1 ul li{
+    margin-right: 30px;
+    border-right: 1px solid #6eaef1;
+
+}
+.nav1 ul li:last-child{
+    border: none;
+}
+
+.nav1 ul li a{
+    display: block;
+    padding:15px 10px;
+    color: black;
+    text-decoration: none;
+}
+
+.nav1 a:hover{
+    cursor: pointer;
+} 
+
+.search-sign{
+    display: flex;
+}
+.search-sign .first{
+    flex:20%
+}
+.search-sign .left-search{
+    flex:50%
+}
+.search-sign .sign{
+    flex: 30%;
+    float: right;
+    padding: 20px;
+    
+}
+.search-sign .sign a{
+    text-decoration: none;
+    color: black;
+    border-left: 1px solid rgb(31, 2, 69);
+    padding: 10px 20px;
+    font-size: 0.9rem;
+}
+
+.left-search{
+    margin-top: 20px;
+    display: flex;
+    align-items: center; 
+    border: 1px solid rgb(181, 181, 181) ;
+    border-radius: 10px;
+    height: 50px;   
+}
+.search{
+    padding: 10px 0;
+    width: 100%;
+    background: transparent;
+    border: none;
+}
+.search:focus{
+    border: none;
+    outline: none;
+}
+
+.fa-solid{
+    margin: 0 5px;
+    font-size: 18px;
+}
+.fa-solid:hover{
+    cursor: pointer;
+    color: #aaa;
+}
+
+.sign button{
+    background-color: rgb(222, 13, 13);
+    color: white;
+    padding: 15px 20px;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+}
+.sign button:hover{
+    background-color: hsl(0, 89%, 56%);
+    cursor: pointer;
+}
+/* .sign-btn .drop-content{
+    min-width: 300px;
+    height: 300px;
+    background-color: rgb(125, 119, 119);
+} */
+
+
+.nav2 ul{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    margin-left: 40px;
+}
+.nav2 ul li{
+    display: block;
+    border-right: 1px solid grey;
+}
+.nav2 ul li:last-child{
+    border-right: none;
+}
+.nav2 ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 15px 20px;
+    margin-right: 30px;
+    font-size: 1rem;   
+}
+
+/* main */
+main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    top: 10%;
+    /* background-color: hsl(211, 92%, 64%); */
+}
+
+main h1{
+    position: relative;
+    font-size: 50px;
+    left: 25px;
+
+}
+main h1 span{
+    color: hsl(211, 92%, 64%);
+}
+main p{
+    width: 600px;
+    text-align: justify;
+    position: relative;
+    top: 50px;
+    left: 25px;
+}
+main a{
+    position: relative;
+    top: 120px;
+    left: 25px;
+    border: 2px solid hsl(211, 92%, 64%) ;
+    text-decoration: none;
+    color: white;
+    background-color:hsl(211, 92%, 64%) ;
+    padding: 10px 15px;
+
+}
+main .main-img img{
+    width: 700px;
+    height: 450px;
+    position: relative;
+    top: 90px;
+    left: 20px;
+}
+/* Featured books */
+.featured{
+    width: 100%;
+    height: 100vh;
+    padding: 70px 0;
+}
+.featured h1{
+   text-align: center;
+   margin:35px 0;
+   font-size: 25px;
+}
+.featured .featured-box{
+    width: 95%;
+    margin: 0 auto;
+    display:flex;
+    overflow: hidden;
+    overflow-x: scroll;
+    
+}
+
+.featured .featured-box .featured-card{
+    width: 19rem;
+    margin: 1rem;
+    text-align: center;
+    border: 1px solid hsl(211, 92%, 64%);
+}
+.featured .featured-box .featured-card:hover{
+    border: 2px solid hsl(211, 92%, 44%);
+    box-shadow: 0 0 2px hsl(211, 92%, 44%);
+}
+.featured .featured-box .featured-card .featured-card-img{
+    padding: 1rem;
+}
+.featured .featured-box .featured-card:hover .featured-card-img{
+    transform:translateY(2rem);
+}
+.featured .featured-box .featured-card .featured-card-img img{
+    height: 20rem;
+    width: 15rem;
+}
+.featured .featured-box .featured-card .featured-card-container{
+    margin: 10px;
+
+}
+.featured .featured-box .featured-card .featured-card-container .writer{
+    color: rgb(104, 103, 103);
+}
+.featured .featured-box .featured-card .featured-card-container .categories{
+    color: hsl(211, 92%, 44%);
+}
+.featured .featured-box .featured-card .featured-card-container .f-btn{
+    padding: 10px;
+    margin: 5px 10px;
+    border: none;
+    background-color:hsl(211, 92%, 54%) ;
+    color: white;
+
+}
+.featured .featured-box .featured-card .featured-card-container .f-btn:hover{
+    background-color:hsl(211, 92%, 44%) ;
+    cursor: pointer;
+}
+.featured .featured-box .featured-card .featured-card-container .book-price{
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 8px 0;
+}
+.featured .featured-box .featured-card .featured-card-container p sub{
+    color: grey;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+    height: 5px;
+}
+::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 8px grey;
+}
+::-webkit-scrollbar-thumb{
+    background-color: hsl(211, 92%, 54%);
+    border-radius: 10px;
+}
+
+
+/* Arrival */
+.arrival{
+    width: 100%;
+    height: 100vh;
+}
+.arrival h1{
+    text-align: center;
+    font-size: 25px;
+    margin: 60px auto;
+}
+.arrival .arrival-box{
+    width: 100%;
+    margin: 0 auto;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.arrival .arrival-box .arrival-card {
+    width: 400px;
+    height: 300px;
+    border: 1px solid hsl(211, 92%, 54%);
+    margin:10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.arrival .arrival-box .arrival-card:hover{
+    border: 2px solid hsl(211, 92%, 44%);
+    cursor: pointer;
+}
+.arrival .arrival-box .arrival-card:hover .arrival-img{
+    transform:translateY(2rem);
+    cursor: pointer;
+}
+.arrival .arrival-box .arrival-card .arrival-img img{
+    width: 180px;
+}
+.arrival .arrival-box .arrival-card .arrival-container{
+    margin: 20px 0;
+    padding: 20px 0;
+}
+.arrival .arrival-box .arrival-card .arrival-container p{
+    font-size: 1.5rem;
+}
+.arrival .arrival-box .arrival-card .arrival-container sub{
+    color: #aaa;
+}
+.arrival .arrival-box .arrival-card .arrival-container .icons{
+    color: hsl(211, 92%, 54%);
+    font-size: 10px;
+}
+
+/* reviews */
+
+.review {
+    width: 100%;
+
+}
+.review h1{
+    text-align: center;
+    font-size: 25px;
+    margin: 60px auto;
+}
+.review .review-box{
+    width: 100%;
+    margin: 0 auto;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+.review .review-box .review-card{
+    width: 400px;
+    height: 300px;
+    border: 1px solid hsl(211, 92%, 54%);
+    text-align: center;
+}
+.review .review-box .review-card:hover{
+    border: 2px solid hsl(211, 92%, 44%);
+    cursor: pointer;
+    
+}
+.review .review-box .review-card img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin-top: 20px;
+}   
+
+.review .review-box .review-card p{
+    text-align: justify;
+    margin: 0 15px;
+}
+.review .review-box .review-card h4{
+    font-family: sans-serif;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+.review .review-box .review-card .icons{
+    color: hsl(211, 92%, 54%);
+    font-size: 10px;
+}
+
+/* Blog */
+.blog{
+   width: 100%;
+   margin-bottom: 50px;
+
+}
+.blog h1{
+    margin:40px auto;
+    text-align: center;
+
+}
+
+.blog .blog-box{
+    width: 100%;
+    margin: 0 auto;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.blog .blog-box .blog-card{
+    width: 400px;
+    height: 450px;
+    border: 1px solid hsl(211, 92%, 54%);
+    text-align: center;
+}
+.blog .blog-box .blog-card:hover{
+    border: 2px solid hsl(211, 92%, 44%);
+    cursor: pointer;
+}
+.blog .blog-box .blog-card img{
+    width: 398px;
+    height: 250px;
+}
+.blog .blog-box .blog-card p{
+    text-align: justify;
+    margin: 0 15px;
+}
+.blog .blog-box .blog-card h4{
+    text-align: left;
+    font-family: sans-serif;
+    margin: 20px 15px;
+    font-size: 1.3rem;
+}
+.blog .blog-box .blog-card button{
+    padding: 10px 30px;
+    margin: 20px 0;
+    border-radius: 5px;
+    border: none;
+    background-color:hsl(211, 92%, 54%) ;
+    color: white;
+}
+.blog .blog-box .blog-card button:hover{
+    background-color:hsl(211, 92%, 44%) ;
+    cursor: pointer;
+}
+
+
+
+/* footer */
+footer{
+   background-color: rgb(238, 236, 236);
+}
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(238, 236, 236);
+    width: 85%;
+    height: 50vh;
+    margin:50px auto;
+}
+.address{
+    flex: 30%;
+    margin-top: 100px;
+
+}
+.address .facebook button{
+    padding: 7px;
+    margin-right: 5px;
+    border: none;
+    background-color: white;
+
+}
+.address .facebook button:hover{
+    cursor: pointer;
+}
+.contact{
+    flex: 25%;
+    margin-top: 100px; 
+}
+.contact ul li {
+    list-style-type: none;
+    padding: 5px;
+
+}
+.contact .fa-solid{
+    color: rgb(252, 90, 36);
+    font-size: 15px;
+}
+.quick_link{
+    flex: 15%;
+    margin-top: 100px;
+
+}
+.quick_link ul li{
+    list-style-type: none;
+    padding: 5px;        
+    transition: background-color 0.3s, color 0.3s;
+}
+.quick_link .fa-solid{
+    color: rgb(252, 90, 36);
+    font-size: 15px;
+
+}
+
+.quick_link ul li:hover{
+    background-color: #f0f0f0; 
+    color: #007BFF;
+    cursor: pointer;
+} 
+
+.newsletter{
+    flex: 30%;  
+    padding: 10px;
+    margin-top: 100px; 
+}
+
+.newsletter input{
+    padding: 5px;
+    margin: 10px;
+    width: 250px;
+    border: none;
+    outline: none;
+}
+.newsletter button{
+    padding: 5px;
+    margin: 10px;
+    width: 150px;
+    border: none;
+    background-color:hsl(210, 1%, 64%) ;
+    color:black;
+    border-radius: 5px;
+}
+.newsletter button:hover{
+    cursor: pointer;
+    background-color:hsl(210, 1%, 44%) ;
+}
+.footer1 p{
+    text-align: center;
+    padding: 5px;
+    border: none;
+    background-color: hsl(0, 6%, 83%);
+}
+
